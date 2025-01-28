@@ -1,0 +1,117 @@
+.footer {
+    background-color: #2c3e50; /* Dark background color */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+    position: relative; /* Positioning for the copyright */
+  }
+  
+  .footer-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    max-width: 1200px; /* Max width for the footer */
+    margin: 0 auto; /* Center the footer */
+  }
+  
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    flex: 1; /* Each section takes equal space */
+    min-width: 250px; /* Minimum width for responsiveness */
+    margin: 10px; /* Margin for spacing */
+  }
+  
+  .footer-content-left img {
+    max-width: 150px; /* Logo size */
+    margin-bottom: 20px; /* Space below logo */
+  }
+  
+  .footer-content-left p {
+    font-size: 14px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for readability */
+  }
+  
+  .footer-social-icons {
+    display: flex; /* Flexbox for social icons */
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 10px; /* Space above icons */
+  }
+  
+  .footer-social-icons img {
+    width: 40px; /* Icon size set to 40px */
+    margin-right: 25px; /* Space between icons */
+    transition: transform 0.3s; /* Animation for hover effect */
+    
+    border-radius: 50%; /* Rounded border for circular effect */
+    padding: 5px; /* Padding inside the border */
+  }
+  
+  .footer-social-icons img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
+  
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    margin-bottom: 15px; /* Space below headings */
+  }
+  
+  .footer-content-center ul,
+  .footer-content-right ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  .footer-content-center li,
+  .footer-content-right li {
+    margin: 5px 0; /* Space between list items */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: color 0.3s; /* Animation for hover effect */
+  }
+  
+  .footer-content-center li:hover,
+  .footer-content-right li:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  
+  hr {
+    border: 1px solid #ecf0f1; /* Light line for separation */
+    margin: 20px 0; /* Space above and below the line */
+  }
+  
+  .footer-copyright {
+    font-size: 12px; /* Smaller font size for copyright */
+    margin-top: 10px; /* Space above copyright */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+    }
+  
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+      text-align: center; /* Center text in smaller screens */
+    }
+  }
+  .footer {
+    background-color: #2c3e50; /* Dark background color */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+    position: relative; /* Positioning for the copyright */
+    margin-top: 100px; /* Add space above the footer */
+  }
+  
+  .footer-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    max-width: 1200px; /* Max width for the footer */
+    margin: 0 auto; /* Center the footer */
+  }
+  
+  /* ... rest of your CSS ... */
