@@ -42,3 +42,142 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+@media (max-width:1050px){
+    .header{
+        height: 38vw;
+
+
+    }
+    .header-container{
+        max-width: 45%;
+
+    }
+}
+
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+
+
+}
+.header-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+    
+}
+.header-container h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+
+.header-container p{
+    font-size: 1vw;
+    color: white;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+.header-container button{
+    background-color: #f9f9f9;
+    color: #49557e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:1050px){
+    .header{
+        height: 38vw;
+
+
+    }
+    .header-container{
+        max-width: 45%;
+        
+    }
+}
+
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+
+
+}
+.header-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+    
+}
+.header-container h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+
+.header-container p{
+    font-size: 1vw;
+    color: white;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+.header-container button{
+    background-color: #f9f9f9;
+    color: #49557e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:1050px){
+    
+        .header-container{
+        max-width: 45%;
+        
+    }
+}
+
+@media (max-width:750px){
+    
+
+    
+    .header-container{
+        max-width: 65%;
+        
+    }
+
+    .header-container p{
+        display: none;
+    }
+    .header-container button{
+        padding: 10vw 4vw;
+    }
+}
