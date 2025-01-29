@@ -114,4 +114,15 @@
     margin: 0 auto; /* Center the footer */
   }
   
-  /* ... rest of your CSS ... */
+  @media (max-width: 7px50) {
+    .footer-content {
+      flex-direction: column; /* Stack items vertically */
+      display: flex;
+      gap:35px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        
+      }
+  }
