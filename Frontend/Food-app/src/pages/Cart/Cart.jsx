@@ -43,19 +43,19 @@ const Cart = () => {
         <div className="cart-total">
           <h2>Cart Totals</h2>
           <div>
-            <div className="cart total details">
+            <div className="cart-total-details-new1">
               <p>Subtotal</p>
               <p>Rs.{getTotalCartAmount()}</p>
             </div>
             <hr />
-            <div className="cart total details">
+            <div className="cart-total-details-new2">
               <p>Delivery fee</p>
-              <p>{2}</p>
+              <p>Rs.{getTotalCartAmount()===0?0:2}</p>
             </div>
             <hr />
-            <div className="cart total details">
+            <div className="cart-total-details-new3">
               <b>Total</b>
-              <b>Rs.{getTotalCartAmount() + 2}</b>
+              <b>Rs.{getTotalCartAmount()===0?0: getTotalCartAmount() + 2}</b>
             </div>
           </div>
           <button onClick={() => navigator('/place-order')}>PROCEED TO CHECKOUT</button>

@@ -27,27 +27,26 @@ const PlaceOrder = () => {
       </div>
       
       <div className="place-order-right">
-      <div className="order-summary">
-  <h2>Order Summary</h2>
-  <div>
-    <div className="order-summary-details">
-      <p>Subtotal</p>
-      <p>Rs.{getTotalCartAmount()}</p>
-    </div>
-    <hr />
-    <div className="order-summary-details">
-      <p>Delivery Fee</p>
-      <p>Rs.{2}</p>
-    </div>
-    <hr />
-    <div className="order-summary-details">
-      <b>Total</b>
-      <b>Rs.{getTotalCartAmount() + 2}</b>
-    </div>
-  </div>
-  <button>PROCEED TO PAYMENT</button>
-</div>
-
+        <div className="cart-total-12">
+          <h2>Cart Totals</h2>
+          <div>
+            <div className="cart-total-details-new1">
+              <p>Subtotal</p>
+              <p>Rs.{getTotalCartAmount()}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details-new2">
+              <p>Delivery fee</p>
+              <p>Rs.{getTotalCartAmount()===0?0:2}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details-new3">
+              <b>Total</b>
+              <b>Rs.{getTotalCartAmount()===0?0: getTotalCartAmount() + 2}</b>
+            </div>
+          </div>
+          <button>PROCEED TO PAYMENT</button>
+        </div>
       </div>
     </form>
   );
