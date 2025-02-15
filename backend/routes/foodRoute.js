@@ -1,16 +1,20 @@
-import express from "express"; //this is used to import the express module
+import express from "express"; // Import express module
+import { addFood } from "../controllers/foodControllers.js"; // Import addFood controller
+import multer from "multer"; // Import multer for image upload
 
-import { addFood } from "../controllers/foodControllers.js";
-import multer from "multer"; //this is used to import the multer module to upload the image
+const foodRouter = express.Router(); // Create a router instance
 
+// Image storage engine
+const storage = multer.diskStorage({
+    destination: "uploads", // Store images in the 'uploads' folder
+    filename: (req, file, cb) => {
+        return cb(null, `${Date.now()}${file.originalname}`); // Give the image a unique name
+    }
+});
 
-const router = express.Router(); //this is used to create a router
+const upload = multer({ storage: storage }); // Configure multer
 
-foodRouter.post
+// Define routes
+foodRouter.post("/add", upload.single("image"),addFood);
 
-
-
-
-
-
-export default router; //this is used to export the router
+export default foodRouter; // Export the correct variable
